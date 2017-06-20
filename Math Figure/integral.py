@@ -34,6 +34,8 @@ plt.plot([x[80],x[80]],[0,f(x[80])], color ='b', linewidth=1.5, linestyle="--")
 # add annotate
 ax.annotate(r'$x=a$', xy=(x[20], f(x[20])), xytext=(x[20], f(x[20])+0.5))
 ax.annotate(r'$x=b$', xy=(x[80], f(x[80])), xytext=(x[80], f(x[80])+0.5))
-ax.annotate(r'$Area=\int_{a}^{b}f(x)$', xy=(x[40], 1), xytext=(x[40], 1))
+ax.annotate(r'$Area=\int_{a}^{b}f(x)\mathrm{d}x$', xy=(x[40], 1), xytext=(x[40], 1))
 
+# save fig
+#fig.savefig('integral.png',dpi=200)
 plt.show()
